@@ -62,6 +62,7 @@ const Navbar = () => {
 	return (
 		<>
 			<div className="topnav">
+				<Link to="/">Home</Link>
 				<Link to="/electronics">Electronics</Link>
 				<Link to="/jewelery">Jewelery</Link>
 				<Link to="/menclothing">Men's clothing</Link>

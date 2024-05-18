@@ -7,6 +7,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Women from "./components/Women";
 import StoreContextProvider from "./context/StoreContextProvider";
 import Product from "./components/Product";
+import Home from "./components/Home";
 
 function App() {
 	return (
@@ -14,6 +15,7 @@ function App() {
 			<BrowserRouter>
 				<Navbar />
 				<Routes>
+					<Route path="/" element={<Home />} />
 					<Route path="/electronics" element={<Electronics />} />
 					{/* <Route path="/electronics/:id" element={<Jewellery />} /> */}
 					<Route path="/jewelery" element={<Jewellery />} />
